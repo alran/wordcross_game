@@ -4,8 +4,8 @@ module.exports = {
   COLORS: {
     YELLOW: 'yellow',
     TEAL: '#3ee4c4',
-    GREEN: '#f5dcff',
-    LIGHTPURPLE: '#1abc9c',
+    LIGHTPURPLE: '#f5dcff',
+    GREEN: '#1abc9c',
     BEIGE: '#F5F1DE'
   },
   DIMENSIONS: {
