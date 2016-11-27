@@ -1,0 +1,3 @@
+rootProject.name = 'wordcross_game'
+
+include ':app'
