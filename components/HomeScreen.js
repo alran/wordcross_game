@@ -33,6 +33,12 @@ export default class HomeScreen extends Component {
             <TouchableHighlight onPress={Actions.gamePlay} style={styles.button}>
               <Text style={styles.buttonText}>Multiplayer Game</Text>
             </TouchableHighlight>
+            <TouchableHighlight onPress={Actions.help} style={styles.button}>
+              <Text style={styles.buttonText}>How To Play</Text>
+            </TouchableHighlight>
+            <TouchableHighlight onPress={Actions.profile} style={styles.button}>
+              <Text style={styles.buttonText}>Profile</Text>
+            </TouchableHighlight>
           </View>
         </View>
       )
@@ -45,19 +51,21 @@ let styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    backgroundColor: GLOBAL.COLORS.LIGHTPURPLE
   },
   button: {
     padding: 10,
     justifyContent: 'center',
     height: 50,
-    backgroundColor: GLOBAL.COLORS.YELLOW,
+    backgroundColor: GLOBAL.COLORS.GREEN,
     borderRadius: 8,
     margin: 10,
     width: GLOBAL.DIMENSIONS.WIDTH * .9,
     alignItems: 'center'
   },
   buttonText: {
-
+    color: 'white',
+    fontSize: 24
   }
 });

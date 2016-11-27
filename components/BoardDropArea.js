@@ -23,7 +23,7 @@ let styles = StyleSheet.create({
   boardDropArea: {
     width: GLOBAL.LETTERSIZE + 1,
     height: GLOBAL.LETTERSIZE + 1,
-    backgroundColor: GLOBAL.COLORS.GREEN,
+    backgroundColor: GLOBAL.COLORS.LIGHTPURPLE,
     borderRadius: 4,
     borderWidth: 0.5,
     borderColor: '#fff'

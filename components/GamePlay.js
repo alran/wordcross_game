@@ -229,7 +229,7 @@ let styles = StyleSheet.create({
   container: {
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: GLOBAL.COLORS.LIGHTPURPLE,
+    backgroundColor: GLOBAL.COLORS.GREEN,
     flexDirection: 'row',
     padding: 5,
     flexWrap: 'wrap',
@@ -275,9 +275,9 @@ let styles = StyleSheet.create({
     backgroundColor: GLOBAL.COLORS.YELLOW,
     alignItems: 'center',
     justifyContent: 'center',
-    bottom:0,
-    left:0,
-    right:0,
+    bottom: 0,
+    left: 0,
+    right: 0,
     position: 'absolute'
   },
   statsElement: {

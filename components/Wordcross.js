@@ -3,6 +3,8 @@ import { StyleSheet, NavigatorIOS } from 'react-native';
 import { Actions, Scene, Router } from 'react-native-router-flux';
 import GamePlay from './GamePlay';
 import HomeScreen from './HomeScreen'
+import Help from './Help'
+import Profile from './Profile'
 
 export default class Wordcross extends Component {
 
@@ -12,6 +14,8 @@ export default class Wordcross extends Component {
         <Scene key="root">
           <Scene key="home" component={HomeScreen} title="WordCross" initial={true} />
           <Scene key="gamePlay" component={GamePlay} />
+          <Scene key="help" component={Help} />
+          <Scene key="profile" component={Profile} />
         </Scene>
       </Router>
     )
