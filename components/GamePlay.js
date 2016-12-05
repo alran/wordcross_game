@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Letter from './Letter';
 import BoardDropArea from './BoardDropArea';
-import HomeScreen from './HomeScreen';
 import Timer from './Timer';
 import {
   StyleSheet,
@@ -82,11 +81,14 @@ export default class GamePlay extends Component {
       // insert logic for deciding which area of the board the letter will be placed in.
       // if the place on the board is already occupied, x and y coordinates will be 0 (the letter will bounce back)
       // return object with x and y coordinates
-      let selectedSpace = placesLetterTouches[0]
-      return {x: selectedSpace[0], y: selectedSpace[1]}
+      console.log('placesLetterTouches: ', placesLetterTouches)
+      return placesLetterTouches
+      // add check to make sure person is not dropping letter back inside letter area
+        // subtract spaces under the players hand from the places it touches
+      // add check to make sure placesLetterTouches isn't empty
     }
     passOutUserHand() {
-      let indexesAndUserhand = this.choosePieces(14)
+      let indexesAndUserhand = this.choosePieces(GLOBAL.STARTERHAND)
       this.removeByIndex(indexesAndUserhand[0])
       return indexesAndUserhand[1]
     }

@@ -28,7 +28,17 @@ export default class Letter extends Component {
             this.props.exchangeForThree(this.props.counter, this.props.letter)
             this.setState({showTile: false})
           } else if (this.props.isBoardArea(gesture)) {
-            let newCoordinates = this.props.placeLetterOnBoard(gesture)
+            let placesLetterTouches = this.props.placeLetterOnBoard(gesture)
+
+            if (placesLetterTouches !== []) {
+              let selectedSpace = placesLetterTouches[0]
+              let newCoordinates =  { x: selectedSpace[0], y: selectedSpace[1] }
+            } else {
+              Animated.spring(
+                this.state.pan,
+                {toValue: {x: 0, y: 0}}
+              ).start();
+            }
             console.log('here are the new coordinates: ', newCoordinates)
             // is the value in the pan an offset not the absolute?
             // Animated.spring(

@@ -9,7 +9,9 @@ export default class BoardDropArea extends Component {
         dropZoneValues: null
       };
     }
-  setDropZoneValues(event) { this.props.addBoardDropZone(event.nativeEvent.layout, this.props.index) }
+  setDropZoneValues(event) {
+    this.props.addBoardDropZone(event.nativeEvent.layout, this.props.index)
+  }
 
   render() {
     return (

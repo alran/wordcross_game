@@ -40,5 +40,6 @@ module.exports = {
     'X': 2,
     'Y': 3,
     'Z': 2
-  }
+  },
+  STARTERHAND: 14
 };
